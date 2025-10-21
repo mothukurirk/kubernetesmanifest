@@ -29,7 +29,7 @@ node {
                     // Commit and push changes
                     sh 'git add .'
                     sh 'git commit -m "Jenkins updated manifest with new image tag: ${env.BUILD_NUMBER}" || true'
-                    sh 'git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/jenkinsfile-wordpress.git'
+                    sh 'git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/kubernetescode.git'
                 }
             }
         }
